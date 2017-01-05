@@ -1,6 +1,6 @@
 {
   "name": "scalable-logger",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Logging with a style with scalability in mind initial",
   "main": "js/index.js",
   "typings": "js/index",
