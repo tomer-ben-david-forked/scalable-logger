@@ -1,4 +1,19 @@
-# ts-npm-module
-Open this probject in [`atom-typescript`](https://atom.io/packages/atom-typescript). Press F6 to build. And then `npm publish` away.
+# scalable-logging
 
-This project can be consumed flawlessly from the sister project [ts-npm-module-consume](https://github.com/basarat/ts-npm-module-consume)
+Example usage:
+
+```javascript
+var scalableLogger = require('scalable-logger');
+
+for (var _i = 0; _i < 2000; _i++) {
+    logEvery1000('info', 'hi');
+}
+```
+
+output:
+
+```commandline
+info: hi
+info: hi
+info: hi
+```

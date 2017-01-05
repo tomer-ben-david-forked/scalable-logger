@@ -1,3 +1,1 @@
-export * from "./deep/foo";
-export * from "./deep/deeper/bar";
-export declare var bas: string;
+export declare function logEvery1000(level: string, msg: string): void;

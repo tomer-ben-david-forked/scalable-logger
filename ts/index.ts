@@ -1,6 +1,10 @@
-// Sample exports from other modules
-export * from "./deep/foo";
-export * from "./deep/deeper/bar";
+let scalable_winston = require('winston');
 
-// Sample export of our own
-export var bas = "123";
+export function logEvery1000(level: string, msg: string) {
+    if ((Math.round(Math.random() * 1000) + 1) % 1000 === 0) {
+        scalable_winston.log(level, msg);
+    } else {
+        scalable_winston.silly(msg);
+    }
+}
+

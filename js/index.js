@@ -1,6 +1,11 @@
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+"use strict";
+var scalable_winston = require('winston');
+function logEvery1000(level, msg) {
+    if ((Math.round(Math.random() * 1000) + 1) % 1000 === 0) {
+        scalable_winston.log(level, msg);
+    }
+    else {
+        scalable_winston.silly(msg);
+    }
 }
-__export(require("./deep/foo"));
-__export(require("./deep/deeper/bar"));
-exports.bas = "123";
+exports.logEvery1000 = logEvery1000;

@@ -1,11 +1,12 @@
 {
-  "name": "ts-npm-module",
-  "version": "1.0.5",
-  "description": "A sample TypeScript npm module",
+  "name": "scalable-logger",
+  "version": "0.0.1",
+  "description": "Logging in a style with scalability in mind",
   "main": "js/index.js",
   "typings": "js/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ./ts"
   },
   "repository": {
     "type": "git",
@@ -15,10 +16,15 @@
     "typescript",
     "atom"
   ],
-  "author": "basaratali@gmail.com",
+  "author": "tomerbd1@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/basarat/ts-npm-module/issues"
+    "url": "https://github.com/tomer-ben-david-forked/ts-npm-module"
   },
-  "homepage": "https://github.com/basarat/ts-npm-module#readme"
+  "homepage": "https://github.com/tomer-ben-david-forked/ts-npm-module#readme",
+  "dependencies": {
+    "@types/winston": "0.0.32",
+    "typescript": "^2.1.4",
+    "winston": "^2.3.0"
+  }
 }
