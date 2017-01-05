@@ -2,17 +2,24 @@
 
 Example usage:
 
-```javascript
-var scalableLogger = require('scalable-logger');
+```commandline
+npm install scalable-logger --save
+```
 
-for (var _i = 0; _i < 2000; _i++) {
-    logEvery1000('info', 'hi');
+```javascript
+"use strict";
+
+var scalableLogger = require("scalable-logger");
+
+for (var _i = 0; _i < 5000; _i++) {
+    scalableLogger.logEvery1000('info', 'hi');
 }
 ```
 
 output:
 
 ```commandline
+info: hi
 info: hi
 info: hi
 info: hi
