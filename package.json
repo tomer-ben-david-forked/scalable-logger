@@ -19,9 +19,9 @@
   "author": "tomerbd1@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tomer-ben-david-forked/ts-npm-module"
+    "url": "https://github.com/tomer-ben-david-forked/scalable-logger"
   },
-  "homepage": "https://github.com/tomer-ben-david-forked/ts-npm-module#readme",
+  "homepage": "https://github.com/tomer-ben-david-forked/scalable-logger#readme",
   "dependencies": {
     "@types/winston": "0.0.32",
     "typescript": "^2.1.4",
